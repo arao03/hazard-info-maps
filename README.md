@@ -48,12 +48,6 @@ people/km²), so normalise per layer before combining.
 * Services return current data, so re-runs can differ. Use the response cache to reproduce a run.
 * Not for operational or life-safety decisions. You are responsible for each service's terms of use.
 
-## Validation
-
-On an existing research scene (Fort Myers Beach, same 1073 × 931 grid) the output matched the original
-rasters: population 100% identical, flood 99.93%, buildings/roads 99.84%, infrastructure IoU 0.955. The
-coastal layer was not compared (the OSM water query was failing during the test).
-
 ## Develop
 
 `pip install -e ".[dev]" && pytest` (offline tests). Modules in `src/hazardmaps/`: `config` (constants),
